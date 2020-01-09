@@ -1,8 +1,8 @@
 // Add your code here
 function handleJson(userObject) {
-  p = document.createElement("p");
+  let p = document.createElement("p");
   p.textContent = userObject.id;
-  outputArea = document.getElementById("outputId");
+  let outputArea = document.getElementById("outputId");
   outputArea.appendChild(p);
 }
 
@@ -28,9 +28,9 @@ function submitData(username, userEmail) {
       handleJson(object);
     })
     .catch(function(error) {
-      errorElement = document.createElement("p")
+      let errorElement = document.createElement("p")
       errorElement.textContent = error.message;
-      errorOutputArea = document.getElementById("error");
+      let errorOutputArea = document.getElementById("error");
       errorOutputArea.appendChild(errorElement);
     });
 }
