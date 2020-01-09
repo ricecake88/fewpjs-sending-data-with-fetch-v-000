@@ -30,9 +30,9 @@ function submitData(username, userEmail) {
       handleJson(object);
     })
     .catch(function(error) {
-      error = document.createElement("p")
-      error.textContent = error.message;
+      errorElement = document.createElement("p")
+      errorElement.textContent = error.message;
       errorOutputArea = document.getElementById("error");
-      errorOutputArea.appendChild(error);
+      errorOutputArea.appendChild(errorElement);
     })
 }
