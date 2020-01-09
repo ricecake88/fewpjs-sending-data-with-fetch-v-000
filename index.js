@@ -22,7 +22,7 @@ function submitData(username, userEmail) {
     body: JSON.stringify(userData)
   };
 
-  return fetch("http://localhost:3000/users", configObject)
+  fetch("http://localhost:3000/users", configObject)
     .then(function(response) {
       return response.json();
     })
