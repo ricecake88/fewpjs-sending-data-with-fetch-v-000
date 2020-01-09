@@ -3,9 +3,7 @@ function handleJson(userObject) {
   p = document.createElement("p")
   p.textContent = userObject.id;
   outputArea = document.getElementById("outputId");
-  outputArea.appendChild(p)
-  
-  
+  outputArea.appendChild(p);
 }
 
 function submitData(username, userEmail) {
