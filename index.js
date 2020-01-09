@@ -1,6 +1,6 @@
 // Add your code here
 function handleJson(userObject) {
-  p = document.createElement("p")
+  p = document.createElement("p");
   p.textContent = userObject.id;
   outputArea = document.getElementById("outputId");
   outputArea.appendChild(p);
