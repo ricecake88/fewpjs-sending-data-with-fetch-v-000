@@ -34,5 +34,5 @@ function submitData(username, userEmail) {
       errorElement.textContent = error.message;
       errorOutputArea = document.getElementById("error");
       errorOutputArea.appendChild(errorElement);
-    })
+    });
 }
